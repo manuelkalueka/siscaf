@@ -1,0 +1,15 @@
+{
+  "name": "siscaf",
+  "version": "1.0.0",
+  "description": "Sistema de Gestão do centro de Alfabetização do CAF",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gestão;gestão",
+    "escolar"
+  ],
+  "author": "Manuel Kalueka",
+  "license": "ISC"
+}
