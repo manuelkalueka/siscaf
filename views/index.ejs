@@ -1,11 +1,29 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <div class="card__msg">
+    <h1 class="msg__title">
+      <%= title %>
+    </h1>
+    <p class="msg__text">Bem-Vindo ao <%= title %>
+    </p>
+
+    <button class="btn btn__login" id="btnLogar">Iniciar Sessão</button> ou
+
+    <button class="btn btn__registar" id="btnRegistar">Registar</button>
+  </div>
+
+  <p class="copyCAF">&copy;C.A.F - <span>Criança Alfabetizada, Futuro Brilhante!</span></p>
+</body>
+
+<script src="/javascripts/index.js"></script>
+
 </html>

@@ -1,65 +1,135 @@
 @charset "UTF-8";
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
 @font-face {
-    font-family: 'Roboto-Bold';
-    src: url('../fonts/Roboto-Bold.ttf');
+  font-family: 'Roboto-Bold';
+  src: url('../fonts/Roboto-Bold.ttf');
 }
 
 @font-face {
-    font-family: 'Roboto-Light';
-    src: url('../fonts/Roboto-Light.ttf');
+  font-family: 'Roboto-Light';
+  src: url('../fonts/Roboto-Light.ttf');
 }
 
 @font-face {
-    font-family: 'Roboto-Regular';
-    src: url('../fonts/Roboto-Regular.ttf');
+  font-family: 'Roboto-Regular';
+  src: url('../fonts/Roboto-Regular.ttf');
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
-a {}
+a {
+  color: inherit;
+}
 
 a:hover,
 button:hover {
-    opacity: .7;
+  opacity: .7;
 }
 
 button:active {
-    transform: translate(0, -10px);
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transform: translate(0, -3px);
 }
 
 :root {
-    --azul_escuro: #0a146e;
-    --azul_claro: #e9ecef;
-    --danger: #dc3545;
-    --warning: #ffc107;
-    --success: #28a745;
-    --info: #17a2b8;
-    --light: #f8f9fa;
-    --dark: #343a40;
+  --azul_escuro: #0a146e;
+  --azul_claro: #e9ecef;
+  --danger: #dc3545;
+  --warning: #ffc107;
+  --success: #28a745;
+  --info: #17a2b8;
+  --light: #f8f9fa;
+  --dark: #343a40;
 
-    --font_bold: 'Roboto-Bold', sans-serif;
-    --font_regular: 'Roboto-Regular', sans-serif;
-    --font_light: 'Roboto-Light', sans-serif;
+  --font_bold: 'Roboto-Bold', sans-serif;
+  --font_regular: 'Roboto-Regular', sans-serif;
+  --font_light: 'Roboto-Light', sans-serif;
 
-    --border_rad: 10px;
+  --border_rad: 6px;
 
-    --breakpoint-sm: 576px;
-    --breakpoint-md: 768px;
-    --breakpoint-lg: 992px;
-    --breakpoint-xl: 1200px;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
 }
 
 body {
-    font-family: var(--font_light);
-    font-size: 16px;
-    color: var(--dark);
+  width: 100%;
+  height: 100vh;
+  background-color: var(--azul_claro);
+  font-family: var(--font_light);
+  font-size: 16px;
+  color: var(--dark);
+}
+
+div {
+  margin: auto;
+  transform: translateY(50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__msg {
+  background-color: var(--light);
+  max-width: 690px;
+  padding: 40px;
+  border-radius: var(--border_rad);
+  box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.226);
+}
+
+.msg__title {
+  font-size: 2.6em;
+  padding: 10px;
+}
+
+.msg__text {
+  padding-bottom: 10px;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  width: 100px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: var(--border_rad);
+  cursor: pointer;
+}
+
+.btn__login {
+  background-color: var(--info);
+  color: var(--azul_claro);
+}
+
+.copyCAF {
+  transform: translate(160%, -50%);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  opacity: .7;
+}
+
+.copyCAF span {
+  font-size: .9em;
+  font-style: italic;
+}
+
+/* Estilo Tela de Login*/
+.form {
+  background-color: var(--light);
+}
+.btn__cancel {
+  border: 1px solid var(--dark);
 }

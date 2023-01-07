@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+    <title>
+        <%= title %>
+    </title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+    <form method="post" id="formLogin" class="form">
+        <h1>
+            <legend>Inicio de Sessão</legend>
+        </h1>
+
+        <label for="userName">
+            <input type="text" id="userName" class="campo" required placeholder="Digite seu usuário" maxlength="20">
+        </label>
+        <label for="senha">
+            <input type="password" id="Senha" class="campo" required placeholder="Digite sua senha" maxlength="20">
+        </label>
+        <button type="submit" class="btn btn__login">Entrar</button><button type="reset" class="btn btn__cancel">Cancelar</button>
+    </form>
+    <script src="/javascripts/index.js"></script>
+
+</html>
