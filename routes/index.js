@@ -14,4 +14,8 @@ router.get('/registar', (req, res, next) => {
   res.render('registar', { title: 'Registar Novo Usuário' });
 });
 
+router.get('/esqueci-senha', (req, res, next) => {
+  res.render('esqueci-senha', { title: 'Recuperar Senha' });
+});
+
 module.exports = router;

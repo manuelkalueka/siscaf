@@ -100,7 +100,7 @@ div {
 .btn {
   outline: none;
   border: none;
-  width: 100px;
+  width: 150px;
   padding: 10px;
   margin: 10px;
   border-radius: var(--border_rad);
@@ -108,7 +108,6 @@ div {
 }
 
 .btn__login {
-  font-size: .7em;
   font-family: var(--font_bold);
   background-color: var(--info);
   color: var(--azul_claro);
@@ -126,33 +125,4 @@ div {
 .copyCAF span {
   font-size: .9em;
   font-style: italic;
-}
-
-/* Estilo Tela de Login*/
-.form {
-  width: 100%;
-  max-width: 940px;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-
-  border-radius: var(--border_rad);
-  background-color: var(--light);
-}
-
-.btn__cancel {
-  border: 1px solid var(--dark);
-}
-
-.campo {
-  outline: none;
-  border: none;
-  width: 100%;
-  max-width: 520px;
-  background-color: var(--azul_claro);
-  padding: 10px;
-  border-radius: var(--border_rad);
 }
