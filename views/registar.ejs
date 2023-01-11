@@ -6,10 +6,39 @@
     <%= title %>
   </title>
   <link rel='stylesheet' href='/stylesheets/style.css' />
+  <link rel="stylesheet" href="/stylesheets/login.css">
+  <link rel="stylesheet" href="/stylesheets/registo.css">
+  <link rel="stylesheet" href="/fonts/fontawesome/css/all.css">
 </head>
 
 <body>
- 
-<script src="/javascripts/index.js"></script>
+
+  <script src="/javascripts/index.js"></script>
+  <form id="formRegisto" method="post" class="form">
+    <legend>
+      <h1>Registo de Usuário</h1>
+    </legend>
+
+    <label for="txtCodFuncionario">
+      <i class="fa fa-number"></i> C.A.F
+      <input type="text" id="txtUsuario" maxlength="2" placeholder="Código de Func.">
+    </label>
+
+    <label for="txtUsuario">
+      <i class="fa fa-user"></i>
+      <input type="text" id="txtUsuario" maxlength="30" placeholder="digite o nome de usuário">
+    </label>
+    <label for="txtSenha">
+      <i class="fa fa-lock"></i>
+      <input type="password" id="txtSenha" maxlength="50" placeholder="Digite a senha">
+    </label>
+    <label for="txtConfSenha">
+      <i class="fa fa-lock"></i>
+      <input type="password" id="txtConfSenha" maxlength="50" placeholder="Digite a senha">
+    </label>
+    <button type="submit" id="btnRegistar">Concluir Registo</button>
+  </form>
+  <script src="/javascripts/registo.js"></script>
+</body>
 
 </html>
