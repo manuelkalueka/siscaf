@@ -11,3 +11,28 @@
 
     box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.299);
 }
+
+input#txtCodFuncionario {
+    padding: none;
+    margin: none;
+    background-color: white;
+    width: 15%;
+}
+
+label {
+    font-weight: bold;
+}
+
+button#btnRegistar {
+    color: var(--light);
+    background-color: var(--info);
+}
+
+button#btnRegistar:active{
+    color: var(--azul_escuro);
+}
+
+pre {
+    color: var(--danger);
+    font-size: .8em;
+}

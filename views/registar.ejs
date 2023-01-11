@@ -19,24 +19,26 @@
       <h1>Registo de Usuário</h1>
     </legend>
 
-    <label for="txtCodFuncionario">
-      <i class="fa fa-number"></i> C.A.F
-      <input type="text" id="txtUsuario" maxlength="2" placeholder="Código de Func.">
+    <label for="txtCodFuncionario">CAF<input type="text" id="txtCodFuncionario" class="campo" maxlength="2"
+        placeholder="Código de Func." required>
     </label>
 
     <label for="txtUsuario">
       <i class="fa fa-user"></i>
-      <input type="text" id="txtUsuario" maxlength="30" placeholder="digite o nome de usuário">
+      <input type="text" id="txtUsuario" class="campo" maxlength="30" placeholder="digite o nome de usuário" required>
     </label>
     <label for="txtSenha">
       <i class="fa fa-lock"></i>
-      <input type="password" id="txtSenha" maxlength="50" placeholder="Digite a senha">
+      <input type="password" id="txtSenha" class="campo" maxlength="50" placeholder="Digite a senha" required>
     </label>
     <label for="txtConfSenha">
       <i class="fa fa-lock"></i>
-      <input type="password" id="txtConfSenha" maxlength="50" placeholder="Digite a senha">
+      <input type="password" id="txtConfSenha" class="campo" maxlength="50" placeholder="Repita a senha" required>
     </label>
-    <button type="submit" id="btnRegistar">Concluir Registo</button>
+    <button type="button" id="btnRegistar" class="btn">Concluir Registo</button>
+    <button type="reset" class="btn btn__cancel" id="btnCancelar">Cancelar</button>
+
+    <pre id="outValidaSenha"></pre>
   </form>
   <script src="/javascripts/registo.js"></script>
 </body>
