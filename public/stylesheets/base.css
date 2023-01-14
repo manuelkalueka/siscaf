@@ -26,6 +26,10 @@ img {
   max-width: 100%;
 }
 
+.fa {
+  color: var(--info);
+}
+
 a {
   color: inherit;
 }
