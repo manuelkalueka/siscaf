@@ -76,7 +76,7 @@ body {
     font-weight: bold;
 }
 
-.bottom_bar input[type="date"] {
+.bottom_bar input {
     font-size: .9em;
     outline: none;
     border: none;
