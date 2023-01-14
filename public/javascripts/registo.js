@@ -1,7 +1,8 @@
 const txtUsuario = document.querySelector('#txtUsuario');
 const txtSenha = document.querySelector('#txtSenha');
 const txtConfSenha = document.querySelector('#txtConfSenha');
-const txtCodFuncionario = document.querySelector * ('#txtCodFuncionario');
+const txtCodFuncionario = document.querySelector('#txtCodFuncionario');
+const btnCancelar = document.querySelector('#btnCancelar');
 
 function registarUsuario() {
     let usuario = txtUsuario.value;
@@ -67,3 +68,7 @@ function validarSenha() {
 }
 
 txtSenha.addEventListener('blur', validarSenha);
+
+btnCancelar.addEventListener('click', () => {
+    location.href = '/';
+});
