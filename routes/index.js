@@ -10,6 +10,11 @@ router.get('/login', (req, res, next) => {
   res.render('login', { title: 'Inicio de Sessão' });
 });
 
+router.post('/login', (req, res, next) => {
+  console.error(req.body.login);
+  res.render('login', {title:'Inicio de Sessão'});
+});
+
 router.get('/registar', (req, res, next) => {
   res.render('registar', { title: 'Registar Novo Usuário' });
 });
