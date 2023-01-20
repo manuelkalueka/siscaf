@@ -7,9 +7,9 @@ router.get('/login', (req, res, next) => {
 });
 
 router.post('/login', (req, res, next) => {
-    db('siscaf').then((siscaf) => {
-        res.render('login', { title: 'Inicio de Sessão', siscaf: siscaf });
-        console.log(siscaf);
+
+    db('usuarios').then((usuarios) => {
+        res.render('login', { title: 'Inicio de Sessão', usuarios: usuarios });
     }, next);
 
 });

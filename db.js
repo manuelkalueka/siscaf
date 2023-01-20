@@ -2,9 +2,11 @@ const knex = require('knex');
 
 const db = knex({
     client: 'mysql',
-    host: '127.0.0.1',
-    user: 'kalueka',
-    database: 'siscaf',
+    connection: {
+        host: '127.0.0.1' || 'localhost',
+        user: 'root',
+        database: 'siscaf',
+    }
 });
 
 module.exports = db;
