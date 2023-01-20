@@ -1,3 +1,31 @@
+:root {
+    --azul_escuro: #0a146e;
+    --azul_claro: #e9ecef;
+    --danger: #dc3545;
+    --warning: #ffc107;
+    --success: #28a745;
+    --info: #17a2b8;
+    --light: #f8f9fa;
+    --dark: #343a40;
+
+    --font_bold: 'Roboto-Bold', sans-serif;
+    --font_regular: 'Roboto-Regular', sans-serif;
+    --font_light: 'Roboto-Light', sans-serif;
+
+    --border_rad: 6px;
+
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+}
+
+@keyframes is-grow {
+    to {
+        transform: scale(1.2);
+    }
+}
+
 body {
     overflow-y: hidden;
 }
@@ -15,7 +43,6 @@ body {
     width: 100%;
     height: auto;
     background: linear-gradient(90deg, #0a146ea4, 20%, #23b7ce);
-    z-index: 0;
 }
 
 .cafButton {
@@ -40,9 +67,9 @@ body {
 }
 
 .menu_top ul li {
-    display: inline;
+       display: inline;
     padding: 10px;
-    margin: 1em;
+    margin: 1em 1em;
 }
 
 .menu_item {
@@ -67,7 +94,7 @@ body {
     height: 2em;
     position: absolute;
     left: 0;
-    bottom: 0; 
+    bottom: 0;
 
     padding-left: 5%;
     padding-right: 5%;
@@ -83,3 +110,95 @@ body {
     border: none;
     background: transparent;
 }
+
+.lists_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card_title {
+    font-variant: small-caps;
+    font-size: 1.9em;
+    /*margin-bottom: 10px;*/
+    color: var(--danger);
+}
+
+#freqTitle {
+    color: #0f6f25;
+}
+
+#freqTitle i.fa {
+    font-size: 22px;
+    color: #0f6f25;
+}
+
+#favTitle {
+    color: #23b7ce;
+}
+
+#favTitle i.fa {
+    font-size: 22px;
+    color: #23b7ce;
+}
+
+.card {
+    width: 150px;
+    height: 100px;
+    display: inline-block;
+    padding: 1.3em;
+    border-radius: var(--border_rad);
+    box-shadow: 1px 1px 5px #00000037;
+    margin: 15px 10px 25px;
+    background-color: var(--info);
+    color: var(--light);
+
+    text-align: center;
+
+    cursor: pointer;
+}
+
+.card:hover {
+    animation-name: is-grow;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1)
+}
+
+.freqItem {
+    background-color: var(--success);
+}
+
+.freqItem:active {
+    background-color: #0f6f25;
+}
+
+.favItem {
+    background-color: var(--info);
+}
+
+.favItem:active {
+    background-color: #23b7ce;
+}
+
+.card i {
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+.freqItem i {
+    color: #0f6f25;
+}
+
+.favItem i {
+    color: #0a146e;
+}
+
+.menu_top {
+    justify-content: space-between;
+    display: flex;
+}
+
+button#btnProfile {
+    margin-right: 5.5em;
+}
+

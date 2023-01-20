@@ -4,9 +4,10 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const session = require('express-session');
+const methodOverride = require('method-override')
 
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+const loginRouter = require('./routes/login');
 const bodyParser = require('body-parser');
 
 var app = express();
@@ -24,8 +25,17 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+/*Conf para aceitar metodos put e delete*/
+app.use(methodOverride((req, res, next) => {
+  if (req.body && typeof req.body == 'object' && '_method' in req.body) {
+    const method = req.body._method;
+    delete req.body._method;
+    return req.body._method;
+  }
+}));
+
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/', loginRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

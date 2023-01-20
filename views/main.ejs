@@ -12,8 +12,15 @@
 
 <body>
     <header class="top_bar">
+
         <h1 class="cafButton" id="btnPrincipal">C.A.F</h1>
+
         <nav class="menu_top">
+
+            <button type="button" id="btnProfile" class="menu_item" title="Perfil do Usuário">
+                <i class="fa fa-user"></i>
+            </button>
+            
             <ul>
                 <li>
                     <button type="button" class="menu_item" title="Estatísticas">
@@ -54,6 +61,41 @@
             </ul>
         </nav>
     </header>
+    <main class="conteudo_Principal" id="tPrincipal">
+        <div class="lists_container">
+
+            <h2 class="card_title" id="freqTitle">Actividades Frequentes <i class="fa fa-clock"></i></h2>
+
+            <ul id="list_actFreq" class="listFreq list">
+                <li class="freqItem card">
+                    <a href=""> <i class="fa fa-list"></i> <br>Ver alunos</a>
+                </li>
+
+                <li class="freqItem card"><a href="">
+                        <i class="fa fa-coins"></i> <br> Pagamentos</a>
+                </li>
+
+                <li class="freqItem card"><a href="">
+                        <i class="fa fa-list"></i> <br> Estatísticas</a>
+                </li>
+            </ul>
+
+            <h2 class="card_title" id="favTitle">Actividades Favoritas <i class="fa fa-heart"></i></h2>
+
+            <ul id="list_actFav" class="listFav list">
+
+                <li class="favItem card"><a href="">
+                        <i class="fa fa-book"></i> <br> Cursos</a></li>
+                <li class="favItem card">
+                    <a href=""> <i class="fa fa-coins"></i>
+                        <br> Pagamentos</a>
+                </li>
+                <li class="favItem card">
+                    <a href=""><i class="fa fa-list"></i> <br> Estatísticas</a>
+                </li>
+            </ul>
+        </div>
+    </main>
 
     <footer class="bottom_bar">
         <p id="user">Administrador</p>
