@@ -67,7 +67,7 @@ body {
 }
 
 .menu_top ul li {
-       display: inline;
+    display: inline;
     padding: 10px;
     margin: 1em 1em;
 }
@@ -202,3 +202,13 @@ button#btnProfile {
     margin-right: 5.5em;
 }
 
+/*
+ToDo ---meter imagem no fundo transparente
+.conteudo_Principal {
+    background: url(../images/fundo.JPG);
+        
+    background-size: contain;
+    background-position: top center;
+    background-attachment: fixed;
+    height: 100vh;
+}*/
