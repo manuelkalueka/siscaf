@@ -1,9 +1,3 @@
-/*const txtUsuario = document.querySelector('#txtUsuario');
-const txtSenha = document.querySelector('#txtSenha');
-const txtConfSenha = document.querySelector('#txtConfSenha');
-const txtCodFuncionario = document.querySelector('#txtCodFuncionario');
-const btnCancelar = document.querySelector('#btnCancelar');*/
-
 function registarUsuario() {
     let usuario = txtUsuario.value;
     let senha = txtSenha.value;
@@ -28,6 +22,8 @@ function registarUsuario() {
 
 const btnRegistar = document.querySelector('#btnRegistar');
 btnRegistar.addEventListener('click', registarUsuario);
+
+/*
 
 //ToDO - Criar condition de senhas iguais nessa funcao
 
@@ -65,10 +61,9 @@ function validarSenha() {
     } else {
         outValidaSenha.textContent = 'A senha deve ' + erros.join('\n')
     }
-}
+} 
 
-txtSenha.addEventListener('blur', validarSenha);
+txtSenha.addEventListener('blur', validarSenha); */
 
-btnCancelar.addEventListener('click', () => {
-    location.href = '/';
-});
+const btnCancelar = document.querySelector('#btnCancelar');
+btnCancelar.addEventListener('click', () => location.href = '/');
