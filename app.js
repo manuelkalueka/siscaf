@@ -12,7 +12,7 @@ const bodyParser = require('body-parser');
 
 var app = express();
 
-app.use(session({ secret: 'centrodealfabetizacaocaf' }));
+app.use(session({ secret: 'centrodealfabetizacaocaf', resave: true, saveUninitialized: true }));
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // view engine setup
