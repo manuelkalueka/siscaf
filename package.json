@@ -8,7 +8,8 @@
   },
   "description": "Sistema de Gestão para o Centro de Alfabetização Fernando",
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "dev": "node app.js"
   },
   "dependencies": {
     "babel": "^6.23.0",
