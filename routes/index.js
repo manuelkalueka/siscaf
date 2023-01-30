@@ -6,10 +6,6 @@ router.get('/', function (req, res, next) {
   res.render('index', { title: 'SISCAF - Gestão do Centro' });
 });
 
-router.get('/registar', (req, res, next) => {
-  res.render('registar', { title: 'Registar Novo Usuário' });
-});
-
 router.get('/esqueci_senha', (req, res, next) => {
   res.render('esqueci_senha', { title: 'Recuperar Senha' });
 });
