@@ -33,7 +33,7 @@ h1 {
 .campo {
     margin-left: 5px;
     margin-bottom: 2em;
-    outline: none;
+    outline-color: var(--info);
     border: none;
     width: 90%;
     max-width: 520px;
@@ -49,4 +49,8 @@ a#btnEsqueciSenha {
     font-size: .9em;
     color: var(--azul_escuro);
     text-decoration: underline;
+}
+
+.focusErro {
+    outline-color: var(--danger);
 }

@@ -5,6 +5,7 @@
     <title>
         <%= title %>
     </title>
+
     <link rel='stylesheet' href='/stylesheets/base.css' />
     <link rel='stylesheet' href='/stylesheets/login.css' />
     <link rel="stylesheet" href="/fonts/fontawesome/css/all.css">
@@ -18,15 +19,19 @@
 
         <label for="userName">
             <i class="fa fa-user"></i>
-            <input type="text" name="user_name" id="userName" class="campo" required placeholder="Digite seu usuário" maxlength="20">
+            <input type="text" name="user_name" id="userName" class="campo" placeholder="Digite seu usuário"
+                maxlength="20">
         </label>
 
         <label for="senha">
             <i class="fa fa-lock"></i>
-            <input type="password" name="user_senha" id="senha" class="campo" required placeholder="Digite sua senha" maxlength="20">
+            <input type="password" name="user_password" id="userPass" class="campo" placeholder="Digite sua senha"
+                maxlength="20">
         </label>
-        <button type="submit" class="btn btn__login" id="btnLogin">Entrar</button>
+
+        <button type="button" class="btn btn__login" id="btnLogin">Entrar</button>
         <button type="reset" class="btn btn__cancel" id="btnCancelar">Cancelar</button>
+
         <a href="/esqueci_senha" id="btnEsqueciSenha">Esqueci minha senha</a>
 
     </form>

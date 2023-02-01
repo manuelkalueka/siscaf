@@ -3,7 +3,6 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-const session = require('express-session');
 const methodOverride = require('method-override')
 
 var indexRouter = require('./routes/index');
@@ -14,7 +13,6 @@ const bodyParser = require('body-parser');
 
 var app = express();
 
-app.use(session({ secret: 'centrodealfabetizacaocaf', resave: true, saveUninitialized: true }));
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // view engine setup

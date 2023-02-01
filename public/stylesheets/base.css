@@ -131,7 +131,3 @@ div {
   font-size: .9em;
   font-style: italic;
 }
-
-input:focus() {
-  outline: var(--info);
-}
