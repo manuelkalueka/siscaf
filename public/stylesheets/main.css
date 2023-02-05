@@ -26,6 +26,18 @@
     }
 }
 
+@keyframes abrirModal {
+    from {
+        transform: translate3d(0, -20px, -5px);
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
 body {
     overflow-y: hidden;
 }
@@ -212,3 +224,59 @@ ToDo ---meter imagem no fundo transparente
     background-attachment: fixed;
     height: 100vh;
 }*/
+
+/*
+.janela-modal {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    width: 60%;
+    min-width: 450px;
+    min-height: 200px;
+    padding: 50px;
+    border-radius: 6px;
+
+    background-color: #ffffff96;
+    backdrop-filter: blur(10px);
+    color: rgb(18, 16, 16);
+}
+
+.fechar {
+    outline: 0;
+    border: 0;
+
+    position: absolute;
+    top: -10px;
+    right: -10px;
+
+    width: 30px;
+    height: 30px;
+
+    background-color: red;
+    color: #fff;
+    font-size: 20px;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+}
+
+.janela-modal.abrirModalConfig {
+    display: flex;
+}
+
+.abrirModalConfig .modal {
+    animation-name: abrirModal;
+    animation-duration: 0.3s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+} */

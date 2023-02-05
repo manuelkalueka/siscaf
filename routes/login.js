@@ -22,7 +22,9 @@ router.post('/login', (req, res, next) => {
 
     if (req.body.user_name == user && req.body.user_password == password) {
         res.redirect('main');
+
         req.session.user_name = user;
+        console.log(userLogado);
 
     } else {
         res.render('login', { title: 'Inicio de Sessão' });

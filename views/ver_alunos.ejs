@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+    <title>
+        <%= title %>
+    </title>
+    <link rel='stylesheet' href='/stylesheets/base.css' />
+    <link rel="stylesheet" href="/fonts/fontawesome/css/all.css">
+    <link rel="stylesheet" href="/stylesheets/alunos.css">
+</head>
+
+<body>
+    <nav class="left_bar">
+        <ul class="menu">
+            <li class="menu_item--left">
+                <button type="button" class="menu_item" title="Estatísticas" id="btnDash">
+                    <i class="fa fa-chart-line"></i>
+                </button>
+            </li>
+
+            <li class="menu_item--left">
+                <button type="button" class="menu_item" id="btnVerAlunos" title="Ver alunos">
+                    <i class="fa fa-list"></i>
+                </button>
+            </li>
+
+            <li class="menu_item--left">
+                <button type="button" class="menu_item" id="btnIncscricoes" title="Inscrições">
+                    <i class="fa fa-book-open"></i>
+                </button>
+            </li>
+            <li class="menu_item--left">
+                <button type="button" class="menu_item" id="btnPagamentos" title="Pagamentos">
+                    <i class="fa fa-coins"></i>
+                </button>
+            </li>
+            <li class="menu_item--left">
+                <button type="button" class="menu_item" id="btnCursos" title="Cursos">
+                    <i class="fa fa-book"></i>
+                </button>
+            </li>
+
+            <li class="menu_item--left">
+                <button type="button" class="menu_item" id="btnConfig" title="Configurações">
+                    <i class="fa fa-gear"></i>
+                </button>
+            </li>
+            <li class="menu_item--left">
+                <button type="button" class="menu_item" id="btnSobre" title="Sobre">
+                    <i class="fa fa-users"></i>
+                </button>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="top_bar">
+            <h1 class="title"> Meus Alunos</h1>
+
+            <ul class="top_menu">
+                <li class="menu_item--top">
+                    <button type="button" class="acoesAlunos" id="btnCriarRegistro" title="Criar">
+                        <i class="fa fa-add"></i>
+                    </button>
+                </li>
+                <li class="menu_item--top">
+                    <button type="button" class="acoesAlunos" id="btnEditarRegisto" title="Editar">
+                        <i class="fa fa-edit"></i>
+                    </button>
+                </li>
+                <li class="menu_item--top">
+                    <button type="button" class="acoesAlunos" id="btnApagarRegisto" title="Apagar">
+                        <i class="fa fa-trash"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="tableContainer">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="titleTab">Nº</th>
+                        <th class="titleTab">Código Aluno</th>
+                        <th class="titleTab">Nome Completo</th>
+                        <th class="titleTab">Apelido</th>
+                        <th class="titleTab">Idade</th>
+                        <th class="titleTab">Encarregado</th>
+                        <th class="titleTab">Pagamento</th>
+                        <th class="titleTab">Estado</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="dadosTab">
+                            01
+                        </td>
+                        <td class="dadosTab">
+                            CAF2031
+                        </td>
+                        <td class="dadosTab">Fernando Congolo</td>
+                        <td class="dadosTab">Professor</td>
+                        <td class="dadosTab">23 anos</td>
+                        <td class="dadosTab">Amaraldo Campos</td>
+                        <td class="estadoPagamento-regular dadosTab">Regular</td>
+                        <td class="dadosTab">
+                            Frequente
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="dadosTab">
+                            01
+                        </td>
+                        <td class="dadosTab">
+                            CAF2031
+                        </td>
+                        <td class="dadosTab">Fernando Congolo</td>
+                        <td class="dadosTab">Professor</td>
+                        <td class="dadosTab">23 anos</td>
+                        <td class="dadosTab">Amaraldo Campos</td>
+                        <td class="estadoPagamento-m-atrasado dadosTab">Muito Atrasado</td>
+                        <td class="dadosTab">
+                            Frequente
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="dadosTab">
+                            01
+                        </td>
+                        <td class="dadosTab">
+                            CAF2031
+                        </td>
+                        <td class="dadosTab">Fernando Congolo</td>
+                        <td class="dadosTab">Professor</td>
+                        <td class="dadosTab">23 anos</td>
+                        <td class="dadosTab">Amaraldo Campos</td>
+                        <td class="estadoPagamento-atrasado dadosTab">Atrasado</td>
+                        <td class="dadosTab">
+                            Frequente
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="dadosTab">
+                            01
+                        </td>
+                        <td class="dadosTab">
+                            CAF2031
+                        </td>
+                        <td class="dadosTab">Fernando Congolo</td>
+                        <td class="dadosTab">Professor</td>
+                        <td class="dadosTab">23 anos</td>
+                        <td class="dadosTab">Amaraldo Campos</td>
+                        <td class="estadoPagamento-regular dadosTab">Regular</td>
+                        <td class="dadosTab">
+                            Frequente
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="dadosTab">
+                            01
+                        </td>
+                        <td class="dadosTab">
+                            CAF2031
+                        </td>
+                        <td class="dadosTab">Fernando Congolo</td>
+                        <td class="dadosTab">Professor</td>
+                        <td class="dadosTab">23 anos</td>
+                        <td class="dadosTab">Amaraldo Campos</td>
+                        <td class="estadoPagamento-regular dadosTab">Regular</td>
+                        <td class="dadosTab">
+                            Frequente
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="dadosTab">
+                            01
+                        </td>
+                        <td class="dadosTab">
+                            CAF2031
+                        </td>
+                        <td class="dadosTab">Fernando Congolo</td>
+                        <td class="dadosTab">Professor</td>
+                        <td class="dadosTab">23 anos</td>
+                        <td class="dadosTab">Amaraldo Campos</td>
+                        <td class="estadoPagamento-regular dadosTab">Regular</td>
+                        <td class="dadosTab">
+                            Frequente
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+</body>
+
+<script src="/javascripts/alunos.js"></script>
+
+</html>

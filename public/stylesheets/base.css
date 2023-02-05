@@ -76,7 +76,8 @@ body {
   color: var(--dark);
 }
 
-div {
+.lists_container,
+.card__msg {
   margin: auto;
   transform: translateY(50%);
   display: flex;
