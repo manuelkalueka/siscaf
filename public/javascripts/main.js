@@ -13,3 +13,7 @@ function mostrarData() {
 }
 
 mostrarData();
+
+const btnDash = document.querySelector('#btnDash').addEventListener('click', () => {
+    location.href = '/dashboard';
+});

@@ -14,4 +14,8 @@ router.get('/main', (req, res, next) => {
   res.render('main', { title: 'Sistema de Gestão do CAF' });
 });
 
+router.get('/dashboard', (req, res, next) => {
+  res.render('dashboard', { title: 'Estatisticas' });
+});
+
 module.exports = router;

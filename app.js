@@ -3,13 +3,17 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-const methodOverride = require('method-override')
+const methodOverride = require('method-override');
+
+const bodyParser = require('body-parser');
+
+// Routas-----------------------------------
 
 var indexRouter = require('./routes/index');
 const loginRouter = require('./routes/login');
 const registarRouter = require('./routes/registar');
-
-const bodyParser = require('body-parser');
+const dashboardRouter = require('./routes/dashboard');
+//---------------------------------------
 
 var app = express();
 
@@ -37,6 +41,7 @@ app.use(methodOverride((req, res, next) => {
 app.use('/', indexRouter);
 app.use('/', loginRouter);
 app.use('/', registarRouter);
+app.use('/', dashboardRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
