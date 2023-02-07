@@ -61,17 +61,17 @@
             <ul class="top_menu">
                 <li class="menu_item--top">
                     <button type="button" class="acoesAlunos" id="btnCriarRegistro" title="Criar">
-                        <i class="fa fa-add"></i>
+                        <i class="fa fa-add"></i> Novo
                     </button>
                 </li>
                 <li class="menu_item--top">
                     <button type="button" class="acoesAlunos" id="btnEditarRegisto" title="Editar">
-                        <i class="fa fa-edit"></i>
+                        <i class="fa fa-edit"></i> Editar
                     </button>
                 </li>
                 <li class="menu_item--top">
                     <button type="button" class="acoesAlunos" id="btnApagarRegisto" title="Apagar">
-                        <i class="fa fa-trash"></i>
+                        <i class="fa fa-trash"></i> Eliminar
                     </button>
                 </li>
             </ul>
@@ -89,10 +89,16 @@
                         <th class="titleTab">Encarregado</th>
                         <th class="titleTab">Pagamento</th>
                         <th class="titleTab">Estado</th>
+                        <th class="titleTab">
+                            <label for="ckTodos">
+                                <input type="checkbox" name="ckTodos" id="ckTodos">Todos
+                            </label>
+                        </th>
                     </tr>
                 </thead>
 
                 <tbody>
+                    <!--
                     <tr>
                         <td class="dadosTab">
                             01
@@ -100,6 +106,7 @@
                         <td class="dadosTab">
                             CAF2031
                         </td>
+                        
                         <td class="dadosTab">Fernando Congolo</td>
                         <td class="dadosTab">Professor</td>
                         <td class="dadosTab">23 anos</td>
@@ -108,89 +115,11 @@
                         <td class="dadosTab">
                             Frequente
                         </td>
-                    </tr>
 
-                    <tr>
-                        <td class="dadosTab">
-                            01
+                        <td class="ckAluno">
+                            <input type="checkbox" name="ckAlunos">
                         </td>
-                        <td class="dadosTab">
-                            CAF2031
-                        </td>
-                        <td class="dadosTab">Fernando Congolo</td>
-                        <td class="dadosTab">Professor</td>
-                        <td class="dadosTab">23 anos</td>
-                        <td class="dadosTab">Amaraldo Campos</td>
-                        <td class="estadoPagamento-m-atrasado dadosTab">Muito Atrasado</td>
-                        <td class="dadosTab">
-                            Frequente
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td class="dadosTab">
-                            01
-                        </td>
-                        <td class="dadosTab">
-                            CAF2031
-                        </td>
-                        <td class="dadosTab">Fernando Congolo</td>
-                        <td class="dadosTab">Professor</td>
-                        <td class="dadosTab">23 anos</td>
-                        <td class="dadosTab">Amaraldo Campos</td>
-                        <td class="estadoPagamento-atrasado dadosTab">Atrasado</td>
-                        <td class="dadosTab">
-                            Frequente
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="dadosTab">
-                            01
-                        </td>
-                        <td class="dadosTab">
-                            CAF2031
-                        </td>
-                        <td class="dadosTab">Fernando Congolo</td>
-                        <td class="dadosTab">Professor</td>
-                        <td class="dadosTab">23 anos</td>
-                        <td class="dadosTab">Amaraldo Campos</td>
-                        <td class="estadoPagamento-regular dadosTab">Regular</td>
-                        <td class="dadosTab">
-                            Frequente
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="dadosTab">
-                            01
-                        </td>
-                        <td class="dadosTab">
-                            CAF2031
-                        </td>
-                        <td class="dadosTab">Fernando Congolo</td>
-                        <td class="dadosTab">Professor</td>
-                        <td class="dadosTab">23 anos</td>
-                        <td class="dadosTab">Amaraldo Campos</td>
-                        <td class="estadoPagamento-regular dadosTab">Regular</td>
-                        <td class="dadosTab">
-                            Frequente
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="dadosTab">
-                            01
-                        </td>
-                        <td class="dadosTab">
-                            CAF2031
-                        </td>
-                        <td class="dadosTab">Fernando Congolo</td>
-                        <td class="dadosTab">Professor</td>
-                        <td class="dadosTab">23 anos</td>
-                        <td class="dadosTab">Amaraldo Campos</td>
-                        <td class="estadoPagamento-regular dadosTab">Regular</td>
-                        <td class="dadosTab">
-                            Frequente
-                        </td>
-                    </tr>
+                    </tr> -->
                 </tbody>
             </table>
         </div>
@@ -199,5 +128,6 @@
 </body>
 
 <script src="/javascripts/alunos.js"></script>
+<script src="/javascripts/menu.js"></script>
 
 </html>

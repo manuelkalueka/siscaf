@@ -15,13 +15,11 @@ main {
     display: inline-block;
     font-size: 2em;
     padding-bottom: 10px;
+
+    cursor: pointer;
 }
 
 .top_bar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
     padding: 2% 5%;
     padding-right: 25%;
 
@@ -31,16 +29,16 @@ main {
     margin: 10px;
 }
 
-.acoesAlunos {
+.acoesAlunos { /* alinhar acções*/
     cursor: pointer;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
-#btnEditarRegisto:active i {
+#btnEditarRegisto:active, #btnEditarRegisto:active i{
     color: var(--warning);
 }
 
-#btnApagarRegisto:active i {
+#btnApagarRegisto:active, #btnApagarRegisto:active i {
     color: var(--danger);
 }
 
@@ -51,6 +49,7 @@ main {
 }
 
 .top_menu li {
+    cursor: pointer;
     display: inline;
 }
 
@@ -78,20 +77,18 @@ table {
     border-collapse: collapse;
 }
 
-tr, th, td {
-    border: 1px solid var(--dark);
-    
+tr,
+td,
+th {
+    border: 1px solid var(--info);
+
 }
 
 .titleTab {
-    background-color: var(--dark);
+    background-color: var(--azul_escuro);
     color: var(--light);
 
-    text-align: center;
-    padding: 20px 40px;
-    font-size: 1em;
 }
 
 .dadosTab {
-    padding: 5px;
 }
