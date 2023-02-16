@@ -6,4 +6,9 @@ router.get('/ver_alunos', (req, res, next) => {
     res.render('ver_alunos', { title: 'Alunos' });
 });
 
+
+router.post('/ver_alunos', (req, res, next) => {
+    res.render('ver_alunos', { title: 'Alunos' });
+});
+
 module.exports = router;

@@ -98,7 +98,7 @@
                 </thead>
 
                 <tbody>
-                    <!--
+
                     <tr>
                         <td class="dadosTab">
                             01
@@ -106,7 +106,7 @@
                         <td class="dadosTab">
                             CAF2031
                         </td>
-                        
+
                         <td class="dadosTab">Fernando Congolo</td>
                         <td class="dadosTab">Professor</td>
                         <td class="dadosTab">23 anos</td>
@@ -119,11 +119,90 @@
                         <td class="ckAluno">
                             <input type="checkbox" name="ckAlunos">
                         </td>
-                    </tr> -->
+                    </tr>
                 </tbody>
             </table>
         </div>
     </main>
+
+
+    <div class="janela-modal" id="novo-modal">
+        <div class="modal">
+            <button type="button" class="fechar" id="fechar">X</button>
+            <h1>Registar Aluno</h1>
+
+            <form method="post" id="formNovoAluno" class="formCadastro" action="/ver_alunos">
+                <fieldset>
+                    <legend>Dados do Aluno</legend>
+                    <label for="nomeCompleto">Nome Completo:</label>
+                    <input type="text" class="campo" id="nomeCompleto" name="nomeCompleto" maxlength="50">
+                    <label for="Apelido">Apelido:</label>
+                    <input type="text" class="campo" id="apelido" name="apelido" maxlength="50">
+                    <label for="dataNasc">Data de Nascimento: </label>
+                    <input type="date"  class="campo" name="dataNasc" id="dataNasc">
+                    <label for="naturalidade">Naturalidade: </label>
+                    <input type="text" class="campo" name="naturalidade" id="naturalidade">
+                    <label for="morada">Morada:</label>
+                    <input type="text" class="campo" name="morada" id="morada">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Filiação</legend>
+                    <label for="nomePai">Nome do Pai:</label>
+                    <input type="text" class="campo" id="nomePai" name="nomePai">
+                    <label for="nomeMae"> Nome da Mãe:</label>
+                    <input type="text" class="campo" id="nomeMae" name="nomeMae">
+                </fieldset>
+                <label for="selEstado"> Estado:</label>
+                <select name="selEstado" id="selEstado">
+                    <option value="freq" selected>Frequente</option>
+                    <option value="desi">Desistente</option>
+                </select>
+
+                <button type="submit" id="btnRegistar" name="btnRegistar" class="btn">Registar</button>
+                <button type="reset" id="btnCancelar" name="btnCancelar" class="btn">Cancelar Registo</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="janela-modal" id="editar-modal">
+        <div class="modal">
+            <button type="button" class="fechar" id="fechar">X</button>
+            <h1>Editar Registar</h1>
+
+            <form method="post" id="formEditarRegisto" class="formCadastro" action="/ver_alunos">
+                <fieldset>
+                    <legend>Dados do Aluno</legend>
+                    <label for="nomeCompleto">Nome Completo:</label>
+                    <input type="text" class="campo" id="nomeCompleto" name="nomeCompleto" maxlength="50">
+                    <label for="Apelido">Apelido:</label>
+                    <input type="text" class="campo" id="apelido" name="apelido" maxlength="50">
+                    <label for="dataNasc">Data de Nascimento: </label>
+                    <input type="date"  class="campo" name="dataNasc" id="dataNasc">
+                    <label for="naturalidade">Naturalidade: </label>
+                    <input type="text" class="campo" name="naturalidade" id="naturalidade">
+                    <label for="morada">Morada:</label>
+                    <input type="text" class="campo" name="morada" id="morada">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Filiação</legend>
+                    <label for="nomePai">Nome do Pai:</label>
+                    <input type="text" class="campo" id="nomePai" name="nomePai">
+                    <label for="nomeMae"> Nome da Mãe:</label>
+                    <input type="text" class="campo" id="nomeMae" name="nomeMae">
+                </fieldset>
+                <label for="selEstado"> Estado:</label>
+                <select name="selEstado" id="selEstado">
+                    <option value="freq" selected>Frequente</option>
+                    <option value="desi">Desistente</option>
+                </select>
+
+                <button type="submit" id="btnRegistar" name="btnGuardar" class="btn">Guardar</button>
+                <button type="reset" id="btnCancelar" name="btnCancelar" class="btn">Cancelar</button>
+            </form>
+        </div>
+    </div>
 
 </body>
 
